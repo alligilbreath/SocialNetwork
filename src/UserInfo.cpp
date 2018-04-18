@@ -57,7 +57,7 @@ bool UserInfo::IsValidName()
     }
     else
     {
-        for(int i = 0; i < _userName.size(); i++)
+        for(unsigned int i = 0; i < _userName.size(); i++)
         {
             currentChar = _userName[i];
             if(ispunct(currentChar) && currentChar != '_')
