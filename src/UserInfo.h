@@ -1,9 +1,9 @@
+//----------------------------------------------------------------------//
+// Author:
+// Net ID:
+// Date:
 //
-//  UserInfo.h
-//  Project
-//
-//  Created by Alli Gilbreath on 4/18/18.
-//
+//----------------------------------------------------------------------//
 
 #ifndef UserInfo_h
 #define UserInfo_h
@@ -25,7 +25,7 @@ public:
     UserInfo();
     UserInfo(string name){ _userName = name;};
     string GetUserName(){ return _userName;};
-    int GetDegreeCentrality(){ return _degreeCentrality;};
+    int GetDegreeCentrality();
     int GetNumFollowers();
     int GetNumFollowing();
     void AddFollower(UserInfo newUser);
