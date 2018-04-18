@@ -14,10 +14,12 @@ private:
     vector<UserInfo> _users;
     UserInfo _rootUser;
     vector<UserInfo> _potentials;
+    bool _goodInput;
 public:
     UserProcessing(string inputFileName, string outputFileName);
     bool ReadInputFile(string inputFileName);
-    bool IsValidName(string currentName);
+    bool IsGoodInput();
+    void WriteOutput(string outputFileName);
     
 };
 #endif /* UserProcessing_h */

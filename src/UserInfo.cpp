@@ -9,17 +9,19 @@
 
 UserInfo::UserInfo()
 {
-    
+    _degreeCentrality = 0;
 }
 
 UserInfo::UserInfo(string userName)
 {
     _userName = userName;
+    _degreeCentrality = 0;
 }
 
 void UserInfo::AddFollower(UserInfo newUser)
 {
     followers.push_back(newUser);
+    _degreeCentrality = followers.size();
 }
 
 void UserInfo::SetUsername(string username)
@@ -34,7 +36,6 @@ void UserInfo::AddFollowing(UserInfo newUser)
 
 int UserInfo::GetDegreeCentrality()
 {
-    _degreeCentrality = followers.size();
     return _degreeCentrality;
 }
 
