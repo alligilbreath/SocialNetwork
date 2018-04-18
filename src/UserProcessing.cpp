@@ -51,8 +51,19 @@ bool UserProcessing::ReadInputFile(string inputFileName)
             }
             else
             {
-                cout << "Invalid username found" << endl;
-                return false;
+                if(!currUser.IsValidName())
+                {
+                    cout << "Input file is " << inputFileName << endl;
+                    cout << "Invalid username found and it's user: " << currUser.GetUserName() << endl;
+                    return false;
+                }
+                else
+                {
+                    cout << "Input file is " << inputFileName << endl;
+                    cout << "Invalid username found and it's follower: " << currFollower.GetUserName() << endl;
+                    return false;
+                }
+                
             }
         }
     }
