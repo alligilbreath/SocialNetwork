@@ -21,10 +21,6 @@ SocialNetworkAnalysis::SocialNetworkAnalysis(string inputFilePath, string output
 }
 
 void SocialNetworkAnalysis::Run(){
-    UserProcessing processUsers(_inputFilePath, _outputFilePath);
-    if(processUsers.IsGoodInput())
-    {
-        processUsers.WriteOutput(_outputFilePath);
-    }
+    
 
 }
