@@ -6,6 +6,7 @@
 //----------------------------------------------------------------------//
 
 #include "SocialNetworkAnalysis.h"
+#include "UserProcessing.h"
 #include <fstream>
 #include <string>
 #include <iostream>
@@ -20,5 +21,6 @@ SocialNetworkAnalysis::SocialNetworkAnalysis(string inputFilePath, string output
 }
 
 void SocialNetworkAnalysis::Run(){
+    UserProcessing processUsers(_inputFilePath, _outputFilePath);
 
 }

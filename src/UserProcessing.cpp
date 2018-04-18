@@ -8,7 +8,7 @@
 #include <stdio.h>
 #include "UserProcessing.h"
 
-UserProcessing::UserProcessing(string inputFileName)
+UserProcessing::UserProcessing(string inputFileName, string outputFileName)
 {
     ReadInputFile(inputFileName);
 }
