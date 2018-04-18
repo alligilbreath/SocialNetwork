@@ -51,6 +51,7 @@ bool UserProcessing::ReadInputFile(string inputFileName)
             }
             else
             {
+                cout << "Invalid username found" << endl;
                 return false;
             }
         }
