@@ -42,8 +42,13 @@ int EndToEndTester::TestFile(int testNum){
     ifstream myOutputFile(myOutputFilePath.str());
     ifstream correctOutputFile(correctOutputFilePath.str());
     
-    if(!myOutputFile.is_open() || !correctOutputFile.is_open()){
-        cout << "Could not open output files.\n" << endl;
+    if(!myOutputFile.is_open()){
+        cout << "Could not open output file " << myOutputFilePath.str() << "\n" << endl;
+        return 0;
+    }
+    if(!correctOutputFile.is_open())
+    {
+        cout << "Could not open output file " << correctOutputFilePath.str() << "\n" << endl;
         return 0;
     }
     
