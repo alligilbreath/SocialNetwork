@@ -18,10 +18,10 @@ UserInfo::UserInfo(string userName)
     _degreeCentrality = 0;
 }
 
-void UserInfo::AddFollower(UserInfo newUser)
+void UserInfo::AddFollower(UserInfo *newUser)
 {
     followers.push_back(newUser);
-    _degreeCentrality = followers.size();
+    //_degreeCentrality = followers.size();
 }
 
 void UserInfo::SetUsername(string username)
@@ -29,22 +29,24 @@ void UserInfo::SetUsername(string username)
     _userName = username;
 }
 
-void UserInfo::AddFollowing(UserInfo newUser)
+void UserInfo::AddFollowing(UserInfo *newUser)
 {
     following.push_back(newUser);
+    //_degreeCentrality = followers.size();
 }
 
 int UserInfo::GetDegreeCentrality()
 {
+    _degreeCentrality = followers.size();
     return _degreeCentrality;
 }
 
-UserInfo UserInfo::GetFollowerAt(int index)
+UserInfo* UserInfo::GetFollowerAt(int index)
 {
     return followers.at(index);
 }
 
-UserInfo UserInfo::GetFollowingAt(int index)
+UserInfo* UserInfo::GetFollowingAt(int index)
 {
     return following.at(index);
 }
@@ -69,4 +71,5 @@ bool UserInfo::IsValidName()
     }
     return true;
 }
+
 

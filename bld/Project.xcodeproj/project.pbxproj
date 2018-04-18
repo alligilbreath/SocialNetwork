@@ -38,6 +38,7 @@
 		958333B573EF443F8B6DD19A /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8A7F4B88F8BD41C19EC4D2D3 /* main.cpp */; };
 		9B2130282087C84E006AC0B9 /* UserInfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9B2130262087C84E006AC0B9 /* UserInfo.cpp */; };
 		9B21302B2087CE63006AC0B9 /* UserProcessing.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9B21302A2087CE63006AC0B9 /* UserProcessing.cpp */; };
+		9B21302F2088008D006AC0B9 /* InputData.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9B21302E2088008D006AC0B9 /* InputData.cpp */; };
 		B28548992C49467A8F8143D1 /* SocialNetworkAnalysis.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 71C828ACC0784CF5930B8A89 /* SocialNetworkAnalysis.cpp */; };
 /* End PBXBuildFile section */
 
@@ -76,6 +77,8 @@
 		9B2130292087C8B6006AC0B9 /* UserInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserInfo.h; sourceTree = "<group>"; };
 		9B21302A2087CE63006AC0B9 /* UserProcessing.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = UserProcessing.cpp; sourceTree = "<group>"; };
 		9B21302C2087CE70006AC0B9 /* UserProcessing.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserProcessing.h; sourceTree = "<group>"; };
+		9B21302D2088007E006AC0B9 /* InputData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InputData.h; sourceTree = "<group>"; };
+		9B21302E2088008D006AC0B9 /* InputData.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = InputData.cpp; sourceTree = "<group>"; };
 		B8BF7434475D44188EC08987 /* sna */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = sna; sourceTree = BUILT_PRODUCTS_DIR; };
 		C01DC25B0DDC43F1901DF19D /* testEndToEnd.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; path = testEndToEnd.cpp; sourceTree = SOURCE_ROOT; };
 		D736EADA50164096BD13CE6A /* SocialNetworkAnalysis.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; path = SocialNetworkAnalysis.h; sourceTree = SOURCE_ROOT; };
@@ -98,6 +101,7 @@
 				8A7F4B88F8BD41C19EC4D2D3 /* main.cpp */,
 				C01DC25B0DDC43F1901DF19D /* testEndToEnd.cpp */,
 				9B21302A2087CE63006AC0B9 /* UserProcessing.cpp */,
+				9B21302E2088008D006AC0B9 /* InputData.cpp */,
 			);
 			name = "Source Files";
 			sourceTree = "<group>";
@@ -146,6 +150,7 @@
 				0C93D3B2784E49D9B26AF7DC /* testEndToEnd.h */,
 				9B2130292087C8B6006AC0B9 /* UserInfo.h */,
 				9B21302C2087CE70006AC0B9 /* UserProcessing.h */,
+				9B21302D2088007E006AC0B9 /* InputData.h */,
 			);
 			name = "Header Files";
 			sourceTree = "<group>";
@@ -241,6 +246,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B21302F2088008D006AC0B9 /* InputData.cpp in Sources */,
 				9B2130282087C84E006AC0B9 /* UserInfo.cpp in Sources */,
 				B28548992C49467A8F8143D1 /* SocialNetworkAnalysis.cpp in Sources */,
 				958333B573EF443F8B6DD19A /* main.cpp in Sources */,

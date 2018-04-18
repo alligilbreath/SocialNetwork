@@ -8,18 +8,18 @@
 #ifndef UserProcessing_h
 #define UserProcessing_h
 #include "UserInfo.h"
+#include "InputData.h"
 
 class UserProcessing{
 private:
-    vector<UserInfo> _users;
+    vector<UserInfo*> _users;
     UserInfo _rootUser;
-    vector<UserInfo> _potentials;
-    bool _goodInput;
+    vector<UserInfo*> _potentials;
+    bool _invalidData;
 public:
-    UserProcessing(string inputFileName, string outputFileName);
-    bool ReadInputFile(string inputFileName);
-    bool IsGoodInput();
-    void WriteOutput(string outputFileName);
+    UserProcessing(InputData inputData);
+    bool IsValid();
+    int ExistingIndex(string currUser);
     
 };
 #endif /* UserProcessing_h */
