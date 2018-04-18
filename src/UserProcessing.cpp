@@ -45,7 +45,7 @@ bool UserProcessing::ReadInputFile(string inputFileName)
         else
         {
             currentStream >> user >> follower;
-            for(int i = 0; i < _users.size(); i++)
+            for(unsigned int i = 0; i < _users.size(); i++)
             {
                 if(_users.at(i).GetUserName() == user)
                 {
