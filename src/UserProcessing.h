@@ -15,7 +15,9 @@ private:
     UserInfo _rootUser;
     vector<UserInfo> _potentials;
 public:
-    UserProcessing(string inputFile);
+    UserProcessing(string inputFileName);
+    bool ReadInputFile(string inputFileName);
+    bool IsValidName(string currentName);
     
 };
 #endif /* UserProcessing_h */

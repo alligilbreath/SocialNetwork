@@ -23,8 +23,9 @@ private:
     vector<UserInfo> followers;
 public:
     UserInfo();
-    UserInfo(string name){ _userName = name;};
+    UserInfo(string name);
     string GetUserName(){ return _userName;};
+    void SetUsername(string username);
     int GetDegreeCentrality();
     int GetNumFollowers();
     int GetNumFollowing();
@@ -32,7 +33,7 @@ public:
     void AddFollowing(UserInfo newUser);
     UserInfo GetFollowerAt(int index);
     UserInfo GetFollowingAt(int index);
-    
+    bool IsValidName();
     
 };
 

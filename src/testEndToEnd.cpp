@@ -8,6 +8,7 @@
 #include <iostream>
 #include <sstream>
 #include <fstream>
+#include <algorithm>
 #include "testEndToEnd.h"
 #include "SocialNetworkAnalysis.h"
 
