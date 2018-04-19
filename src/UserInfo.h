@@ -24,8 +24,9 @@ private:
 public:
     UserInfo();
     UserInfo(string name);
+    UserInfo(const UserInfo &assign);
     string GetUserName(){ return _userName;};
-    void SetUsername(string username);
+  //  void SetUsername(string username);
     int GetDegreeCentrality();
     int GetNumFollowers();
     int GetNumFollowing();
@@ -35,7 +36,7 @@ public:
  //   void SetIndexInUsers(int index);
     UserInfo* GetFollowerAt(int index);
     UserInfo* GetFollowingAt(int index);
-    bool IsValidName();
+//    bool IsValidName();
     
 };
 

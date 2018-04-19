@@ -13,13 +13,19 @@
 class UserProcessing{
 private:
     vector<UserInfo*> _users;
-    UserInfo _rootUser;
+    UserInfo *_rootUser;
     vector<UserInfo*> _potentials;
     bool _invalidData;
 public:
     UserProcessing(InputData inputData);
     bool IsValid();
-    int ExistingIndex(string currUser);
+    int CheckPrev(string user);
+    int GetDegreeCentrality();
+    UserInfo* GetRoot();
+    bool CheckIfImportant(UserInfo* user);
+    vector<UserInfo*> GetUsers();
+    vector<UserInfo*> GetPotentials();
+    
     
 };
 #endif /* UserProcessing_h */
